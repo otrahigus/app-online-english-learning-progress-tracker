@@ -1,0 +1,93 @@
+{
+  "meeting_1": {
+    "title": "Alphabet, Greetings & To Be",
+    "materi": "## Alphabet, Greetings & To Be\n\n**To Be** dalam bahasa Inggris digunakan sesuai subjek:\n\n| Subjek | To Be |\n|--------|-------|\n| I | am |\n| You/We/They | are |\n| He/She/It | is |\n\nContoh:\n- I **am** a student.\n- She **is** a teacher.\n- They **are** friends.\n\nSapaan umum: *Good morning*, *Good afternoon*, *Good evening*, *How are you?*",
+    "soal": [
+      {"type": "multiple_choice", "question": "Apa To Be untuk 'I'?", "options": ["am", "is", "are"], "answer": "am"},
+      {"type": "multiple_choice", "question": "Apa To Be untuk 'They'?", "options": ["am", "is", "are"], "answer": "are"},
+      {"type": "fill_in", "question": "To Be untuk 'She' adalah ...", "keyword": "is", "answer": "is"},
+      {"type": "essay", "question": "Tulis perkenalan dirimu dalam 5 kalimat menggunakan To Be!", "self_assessment": true}
+    ]
+  },
+  "meeting_2": {
+    "title": "Personal Pronouns & Possessive Adjectives",
+    "materi": "## Personal Pronouns & Possessive Adjectives\n\n| Subject | Object | Possessive |\n|---------|--------|------------|\n| I | me | my |\n| You | you | your |\n| He | him | his |\n| She | her | her |\n| It | it | its |\n| We | us | our |\n| They | them | their |\n\nContoh: **My** name is Andi. This is **her** book.",
+    "soal": [
+      {"type": "multiple_choice", "question": "Possessive adjective untuk 'I' adalah?", "options": ["my", "me", "mine"], "answer": "my"},
+      {"type": "fill_in", "question": "This is ___ (dia perempuan) bag.", "keyword": "her", "answer": "her"},
+      {"type": "essay", "question": "Buat 3 kalimat menggunakan possessive adjective!", "self_assessment": true}
+    ]
+  },
+  "meeting_3": {
+    "title": "Simple Present Tense",
+    "materi": "## Simple Present Tense\n\nDigunakan untuk kebiasaan atau fakta umum.\n\nRumus: **S + V1 (+s/es untuk He/She/It)**\n\nContoh:\n- I **go** to school every day.\n- She **goes** to school every day.",
+    "soal": [
+      {"type": "multiple_choice", "question": "She ___ to school every day.", "options": ["go", "goes", "going"], "answer": "goes"},
+      {"type": "fill_in", "question": "They ___ (play) football every weekend.", "keyword": "play", "answer": "play"},
+      {"type": "essay", "question": "Tulis 3 kalimat kebiasaan sehari-harimu memakai simple present tense!", "self_assessment": true}
+    ]
+  },
+  "meeting_4": {
+    "title": "Simple Past Tense",
+    "materi": "## Simple Past Tense\n\nDigunakan untuk kejadian yang sudah selesai di masa lalu.\n\nRumus: **S + V2**\n\nContoh:\n- I **watched** a movie yesterday.\n- She **went** to Bali last week.",
+    "soal": [
+      {"type": "multiple_choice", "question": "Bentuk V2 dari 'go' adalah?", "options": ["goed", "went", "gone"], "answer": "went"},
+      {"type": "fill_in", "question": "I ___ (watch) a movie yesterday.", "keyword": "watched", "answer": "watched"},
+      {"type": "essay", "question": "Ceritakan kegiatanmu kemarin dalam 5 kalimat memakai simple past tense!", "self_assessment": true}
+    ]
+  },
+  "meeting_5": {
+    "title": "Present Continuous Tense",
+    "materi": "## Present Continuous Tense\n\nDigunakan untuk kejadian yang sedang berlangsung.\n\nRumus: **S + to be + V-ing**\n\nContoh:\n- I **am reading** a book now.\n- They **are playing** football.",
+    "soal": [
+      {"type": "multiple_choice", "question": "She ___ (cook) dinner now.", "options": ["is cooking", "cooks", "cooked"], "answer": "is cooking"},
+      {"type": "fill_in", "question": "I ___ (write) an email right now.", "keyword": "am writing", "answer": "am writing"},
+      {"type": "essay", "question": "Deskripsikan apa yang sedang kamu lakukan sekarang dalam 3 kalimat!", "self_assessment": true}
+    ]
+  },
+  "meeting_6": {
+    "title": "Nouns, Articles (a/an/the)",
+    "materi": "## Nouns & Articles\n\n**a/an** digunakan untuk benda yang belum spesifik (singular).\n**the** digunakan untuk benda yang sudah spesifik/diketahui.\n\nContoh:\n- I have **a** cat.\n- **The** cat is sleeping.",
+    "soal": [
+      {"type": "multiple_choice", "question": "I saw ___ elephant at the zoo.", "options": ["a", "an", "the"], "answer": "an"},
+      {"type": "fill_in", "question": "___ sun rises in the east.", "keyword": "the", "answer": "the"},
+      {"type": "essay", "question": "Buat 3 kalimat yang menggunakan a, an, dan the!", "self_assessment": true}
+    ]
+  },
+  "meeting_7": {
+    "title": "Adjectives & Comparatives",
+    "materi": "## Adjectives & Comparatives\n\nAdjective menjelaskan noun. Comparative membandingkan dua hal.\n\nContoh:\n- She is **tall**.\n- She is **taller** than her brother.\n- This book is **more interesting** than that one.",
+    "soal": [
+      {"type": "multiple_choice", "question": "This house is ___ than mine.", "options": ["big", "bigger", "biggest"], "answer": "bigger"},
+      {"type": "fill_in", "question": "She is ___ (beautiful, comparative) than her sister.", "keyword": "more beautiful", "answer": "more beautiful"},
+      {"type": "essay", "question": "Bandingkan dua kota menggunakan comparative adjective (3 kalimat)!", "self_assessment": true}
+    ]
+  },
+  "meeting_8": {
+    "title": "Modal Verbs (can, must, should)",
+    "materi": "## Modal Verbs\n\n- **can**: kemampuan/izin\n- **must**: keharusan\n- **should**: saran\n\nContoh:\n- I **can** swim.\n- You **must** wear a helmet.\n- You **should** study harder.",
+    "soal": [
+      {"type": "multiple_choice", "question": "You ___ study hard to pass the exam.", "options": ["can", "must", "may"], "answer": "must"},
+      {"type": "fill_in", "question": "I ___ (mampu) speak three languages.", "keyword": "can", "answer": "can"},
+      {"type": "essay", "question": "Tulis 3 saran untuk temanmu menggunakan 'should'!", "self_assessment": true}
+    ]
+  },
+  "meeting_9": {
+    "title": "Question Words (WH-Questions)",
+    "materi": "## WH-Questions\n\n**What, Where, When, Who, Why, How** digunakan untuk membentuk pertanyaan.\n\nContoh:\n- **What** is your name?\n- **Where** do you live?\n- **Why** are you late?",
+    "soal": [
+      {"type": "multiple_choice", "question": "___ is your favorite color?", "options": ["Who", "What", "When"], "answer": "What"},
+      {"type": "fill_in", "question": "___ do you live? (menanyakan tempat)", "keyword": "where", "answer": "where"},
+      {"type": "essay", "question": "Buat 5 pertanyaan menggunakan WH-questions yang berbeda!", "self_assessment": true}
+    ]
+  },
+  "meeting_10": {
+    "title": "Review & Simple Conversation",
+    "materi": "## Review & Simple Conversation\n\nMeeting terakhir untuk merangkum semua materi: To Be, Pronouns, Tenses, Articles, Adjectives, Modal Verbs, dan WH-Questions.\n\nCoba praktikkan percakapan sederhana dengan menggabungkan semua materi sebelumnya!",
+    "soal": [
+      {"type": "multiple_choice", "question": "Manakah kalimat yang benar?", "options": ["She go to school.", "She goes to school.", "She going to school."], "answer": "She goes to school."},
+      {"type": "fill_in", "question": "Lengkapi: 'What ___ your name?'", "keyword": "is", "answer": "is"},
+      {"type": "essay", "question": "Tulis sebuah percakapan singkat (dialog) 6-8 baris menggunakan minimal 3 materi yang sudah dipelajari!", "self_assessment": true}
+    ]
+  }
+}
