@@ -6,7 +6,7 @@ Contoh isi secrets.toml:
 
 [auth]
 users = [
-    {email = "mec.edu.kampung@gmail.com", password = "123", name = "otra"},
+    {email = "student1@email.com", password = "password123", name = "Andi"},
     {email = "student2@email.com", password = "password456", name = "Siti"}
 ]
 """

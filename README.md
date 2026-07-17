@@ -33,10 +33,17 @@ streamlit-app/
 1. Buka [Google Cloud Console](https://console.cloud.google.com/) → buat project baru.
 2. Aktifkan **Google Sheets API** dan **Google Drive API**.
 3. Buat **Service Account** → buat key baru (format JSON) → unduh file JSON-nya.
-4. Buat spreadsheet baru di Google Sheets bernama `english_learning_progress`
-   (atau biarkan kosong — aplikasi akan membuatnya otomatis saat pertama kali dijalankan).
+4. Buat spreadsheet baru di Google Sheets (nama bebas, misalnya `english_learning_progress`).
 5. **Share** spreadsheet tersebut ke email `client_email` yang ada di file JSON service account
    (beri akses **Editor**).
+6. Salin **Spreadsheet ID** dari URL spreadsheet:
+   `https://docs.google.com/spreadsheets/d/`**`INI_SPREADSHEET_ID_NYA`**`/edit`
+   → isi ke `spreadsheet_id` di `secrets.toml`.
+
+> Kenapa pakai ID, bukan nama? Membuka spreadsheet berdasarkan **ID** jauh lebih stabil —
+> tidak masalah walau namanya diganti, dan tidak ambigu kalau ada beberapa spreadsheet
+> dengan nama yang mirip. Kalau `spreadsheet_id` dikosongkan, aplikasi akan fallback
+> mencari/membuat spreadsheet berdasarkan `sheet_name` (kurang direkomendasikan).
 
 ## 2. Isi `secrets.toml`
 

@@ -34,17 +34,36 @@ class GoogleSheet:
     @st.cache_resource(show_spinner=False)
     def _connect(_self):
         creds_dict = dict(st.secrets["gsheet"])
-        # sheet_name bukan bagian dari service account credentials
+        # sheet_name & spreadsheet_id bukan bagian dari service account credentials
         creds_dict.pop("sheet_name", None)
+        creds_dict.pop("spreadsheet_id", None)
         creds = Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
         return gspread.authorize(creds)
 
     def _open_sheet(self):
-        sheet_name = st.secrets["gsheet"]["sheet_name"]
-        try:
-            spreadsheet = self._client.open(sheet_name)
-        except gspread.SpreadsheetNotFound:
-            spreadsheet = self._client.create(sheet_name)
+        gsheet_secrets = st.secrets["gsheet"]
+        spreadsheet_id = gsheet_secrets.get("spreadsheet_id", "").strip()
+        sheet_name = gsheet_secrets.get("sheet_name", "english_learning_progress")
+
+        if spreadsheet_id:
+            # Cara paling stabil: buka langsung berdasarkan Spreadsheet ID.
+            # ID diambil dari URL: docs.google.com/spreadsheets/d/<INI_ID_NYA>/edit
+            try:
+                spreadsheet = self._client.open_by_key(spreadsheet_id)
+            except gspread.SpreadsheetNotFound:
+                raise RuntimeError(
+                    f"Spreadsheet dengan ID '{spreadsheet_id}' tidak ditemukan atau belum "
+                    f"di-share ke email service account. Cek kembali spreadsheet_id di secrets.toml "
+                    f"dan pastikan spreadsheet sudah di-share (akses Editor) ke client_email."
+                )
+        else:
+            # Fallback lama: cari/buat berdasarkan nama (kurang stabil, hanya dipakai
+            # kalau spreadsheet_id tidak diisi di secrets.toml).
+            try:
+                spreadsheet = self._client.open(sheet_name)
+            except gspread.SpreadsheetNotFound:
+                spreadsheet = self._client.create(sheet_name)
+
         worksheet = spreadsheet.sheet1
         # pastikan header ada
         existing_header = worksheet.row_values(1)
