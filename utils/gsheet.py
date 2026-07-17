@@ -74,11 +74,20 @@ class GoogleSheet:
 
     # ---------- helper internal ----------
     def _find_row(self, email: str):
-        """Return (row_index, row_values) atau (None, None) kalau belum ada."""
+        """Return (row_index, row_values) atau (None, None) kalau belum ada.
+
+        Catatan: tergantung versi gspread, .find() bisa RETURN None kalau tidak
+        ketemu (versi baru) ATAU melempar CellNotFound (versi lama). Kita handle
+        dua-duanya supaya tidak crash dengan AttributeError.
+        """
         try:
             cell = self._sheet.find(email, in_column=1)
         except gspread.exceptions.CellNotFound:
+            cell = None
+
+        if cell is None:
             return None, None
+
         row_values = self._sheet.row_values(cell.row)
         return cell.row, row_values
 
